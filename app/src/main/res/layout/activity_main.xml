@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.phucduy.inline_anonymous_listener.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#008242"
+        android:text="Chuyển đổi năm dương lịch"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:id="@+id/txtVHeader"/>
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/txtVHeader"
+        android:text="Năm dương lịch:"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:id="@+id/txtVDuongLich"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/txtVDuongLich"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtVHeader"
+        android:id="@+id/editTextDuongLich"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Chuyển đổi"
+        android:layout_toRightOf="@id/txtVDuongLich"
+        android:layout_below="@id/txtVDuongLich"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btnChuyenDoi"/>
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:text="Năm âm lịch:"
+        android:layout_below="@id/btnChuyenDoi"
+        android:textSize="20sp"
+        android:id="@+id/txtVAmLich"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="#ffff00"
+        android:layout_below="@id/btnChuyenDoi"
+        android:layout_toRightOf="@id/txtVAmLich"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/txtVKQ"/>
+
+</RelativeLayout>
